@@ -4,6 +4,7 @@
 
 int addInt(int, int);
 int (*funtionPtr)(int , int);
+int add2to3(int);
 
 int main(int argc, char* argv[]) {
 
@@ -11,11 +12,18 @@ int main(int argc, char* argv[]) {
 
 	int sum = (*funtionPtr)(2, 3);
 	
-	printf("Sum: %d", sum);
+	printf("Sum: %d\n", sum);
+	
+	//Passing the pointer to another funtion:
+	printf("Sum: %d", add2to3(sum));
 
 	return 0;
 }
 
 int addInt(int a, int b) {
 		return a + b;
+}
+
+int add2to3(int a) {
+		return a;
 }
