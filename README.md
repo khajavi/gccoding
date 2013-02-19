@@ -1,4 +1,4 @@
 gccoding
 ========
 
-My programming practice in C and C++ languages.
+My programming practices in C and C++ languages.
