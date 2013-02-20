@@ -16,3 +16,6 @@
 *.out
 *.app
 *.bin
+
+# Temporary files
+*.swp

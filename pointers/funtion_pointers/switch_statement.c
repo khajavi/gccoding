@@ -14,7 +14,8 @@ void Switch_With_Function_Pointer(float, float, float (*)(float, float));
 
 int main(int argc, char* argv[]) {
 	Switch(2, 5, '+');
-	Switch_With_Function_Pointer(2, 5, &Minus);
+	Switch_With_Function_Pointer(2, 5, &Minus); 
+	Switch_With_Function_Pointer(2, 5, Minus); 
 	return 0;
 }
 
@@ -35,9 +36,7 @@ void Switch(float a, float b, char opCode) {
 	printf( "Switch: %f+%f=%f\n", a, b, result);
 }
 
-void Switch_With_Function_Pointer(float a,
-																	float b,
-																	float (*pt2Func)(float, float)) {
+void Switch_With_Function_Pointer(float a,float b, float (*pt2Func)(float, float)) {
 	float result = pt2Func(a, b);
 	printf("Switch replaced by function pointer: %f-%f=%f\n", a, b, result);
 
