@@ -1,0 +1,3 @@
+[submodule "gccoding.wiki"]
+	path = gccoding.wiki
+	url = git@github.com:khajavi/gccoding.wiki.git
